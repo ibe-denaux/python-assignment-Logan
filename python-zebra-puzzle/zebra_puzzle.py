@@ -9,10 +9,12 @@ def next_to(x, y):
     return abs(x-y) == 1
 
 def solution():
+    # There are 5 houses
     houses = first, _, middle, _, _ = [1, 2, 3, 4, 5]
     orderings = list(itertools.permutations(houses))
 
     answers = next([{English: "English", Spanish: "Spanish", Ukranian: "Ukranian", Japanese: "Japanese", Norwegian: "Norwegian"}[x] for x in (water, zebra)]
+                  # For each type of information (colours, nationalities, drinks, cigarettes, animals), we do a for loop and write the conditions related to them right after. That way, we only look at combinations which fulfil the conditions and we do not spend time/memory on that. 
                   for (red, green, ivory, yellow, blue) in orderings
                   if right_to(green, ivory)
 
