@@ -34,13 +34,13 @@ def next_to(x, y):
     return abs(x-y) == 1
 
 def zebra_puzzle():
-    # Returns where water is drunk and where the zebra is
-    # There are 5 house. We also define which houses are the "first" and "middle" ones
+    # Returns the number of the houses where water is drunk and where the zebra is.
+    # There are 5 house. We also define which houses are the "first" and "middle" ones.
     houses = first, _, middle, _, _ = [1, 2, 3, 4, 5]
 
     # We create a list with all possible combinations of houses = 5! = 120
     orderings = list(itertools.permutations(houses))
-    # It will return a tuple with the number of the houses where water is drunk and where the zebra is
+    # It will return a tuple with the number of the houses where water is drunk and where the zebra is.
     answers = next((water, zebra)
                 # 5 colors and their conditions
                 for (yellow, blue, red, ivory, green) in orderings
