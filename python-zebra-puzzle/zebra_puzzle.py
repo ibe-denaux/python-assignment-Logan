@@ -9,7 +9,7 @@ def next_to(x, y):
     return abs(x-y) == 1
 
 def solution():
-    houses = first, _, middle, _, _ = range(5)
+    houses = first, _, middle, _, _ = [1, 2, 3, 4, 5]
     orderings = list(itertools.permutations(houses))
 
     answers = next([{English: "English", Spanish: "Spanish", Ukranian: "Ukranian", Japanese: "Japanese", Norwegian: "Norwegian"}[x] for x in (water, zebra)]
