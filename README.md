@@ -1,3 +1,3 @@
-# python-assignment-Logan
-Hamming distance
-Zebra Puzzle
+# Python-Assignment-Logan
+- Hamming distance
+- Zebra Puzzle
